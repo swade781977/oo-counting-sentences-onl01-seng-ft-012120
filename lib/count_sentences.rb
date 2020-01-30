@@ -16,7 +16,11 @@ class String
 
   def count_sentences
     count = 0 
-    self.each_char{|char|  char == "." || "?" || "!"  count += 1:  count += 0}
+    self.each_char do |char|
+      if char == "." || "?" || "!"
+        count += 1 
+      else
+    end
     count
   end
-end
+end 
